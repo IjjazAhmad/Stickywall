@@ -1,0 +1,15 @@
+.formDiv{
+    background-color:$light;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card{
+        color: $white !important;
+        border-radius: 20px;
+        box-shadow: #B6B7ED 0px 26px 25px, #B6B7ED 0px -6px 30px, #C0C1F0 0px 4px 6px, #C0C1F0 0px 12px 13px, #C0C1F0 0px -3px 5px;
+        background-color: $primary;
+        border: none;
+        outline: none;
+    }
+}

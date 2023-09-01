@@ -1,0 +1,82 @@
+.box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    min-height: 15rem;
+    color: black;
+    background-color: $PlusCard;
+    border-radius: 10px;
+    cursor: pointer;
+    .Plus{
+        font-weight:500;
+        font-size: 60px;
+      
+    }
+}
+.box1:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.box1:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+
+
+.box{
+    
+    min-height: 15rem;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    .Plus{
+        font-weight:500;
+        font-size: 60px;
+      
+    }
+    .boxDescription{
+        max-height: 21vh;
+        Overflow-y:scroll;
+        Overflow-x:hidden;
+    }
+    ::-webkit-scrollbar {
+        width: 6px;
+      }
+      
+      /* Track */
+      
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: red; 
+        border-radius: 10px;
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #b30000; 
+      }
+    .content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .box{
+        .boxDescription{
+            max-height: 23vh;
+        }
+    }
+  }
+@media screen and (max-width: 400px) {
+    .box{
+        .boxDescription{
+            max-height: 17vh;
+        }
+    }
+  }
